@@ -1,0 +1,17 @@
+{
+    "name": "gplaza/yii2-rut-heper",
+    "description": "Yii2 utilities for chilean RUT",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "extension", "formatter"],
+    "license": "GPL2",
+    "authors": [{
+            "name": "Gilles Grandguillaume",
+            "email": "gilles.grandguillaume@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "gplaza\\rututil\\": "src"
+        }
+    }
+}

@@ -3,6 +3,7 @@
 namespace gplaza\rututil;
 
 use yii\validators\Validator;
+use gplaza\rututil\RutBehavior;
 
 class RutValidator extends Validator
 {

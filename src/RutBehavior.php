@@ -55,13 +55,13 @@ class RutBehavior extends Behavior
 
     public function getFormatRut()
     {
-
         $rut = $this->owner->attributes[$this->attributeName];
         return RutBehavior::format($rut);
     }
 
     public static function format($string)
     {
+        $string = empty($string) ? "" : $string;
         $string = str_replace(['.', ' ', '-'], '', $string);
 
         // Primero vamos si es menos o mayor a 9 millones

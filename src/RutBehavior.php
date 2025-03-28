@@ -79,4 +79,15 @@ class RutBehavior extends Behavior
         $string = RutBehavior::format($string);
         return str_replace('.', '', $string);
     }
+
+    public static function getRutDetail($string) 
+    {   
+        $string = strtoupper(str_replace(['.', ' ', '-'], '', $string));
+        
+        $result = [];
+        $result["rut"] = substr($string, 0, -1);
+        $result["dv"] = substr($string, -1);
+
+        return $result;
+    }
 }
